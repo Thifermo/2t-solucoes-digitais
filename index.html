@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2T Soluções Digitais | Sua empresa no mapa da cidade e na internet</title>
+  <meta name="description" content="Site profissional, Perfil no Google Maps e Placas de Avaliação NFC. Colocamos sua empresa no mapa da cidade e na internet.">
+  <meta name="theme-color" content="#0B1F33">
+
+  <!-- Fontes: Montserrat (títulos) e Inter (textos e botões) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       1. HEADER (fixo no topo)
+       ===================================================== -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+
+      <!-- Logo em texto -->
+      <a href="#topo" class="header__logo" aria-label="2T Soluções Digitais - Início">2T Soluções Digitais</a>
+
+      <!-- Botão hambúrguer (visível apenas no mobile) -->
+      <button class="header__toggle" id="menu-toggle" type="button"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+
+      <!-- Menu de navegação (links âncora + CTA) -->
+      <nav class="header__nav" id="menu" aria-label="Navegação principal">
+        <ul class="header__list">
+          <li><a href="#problema" class="header__link">O Problema</a></li>
+          <li><a href="#solucoes" class="header__link">Soluções</a></li>
+          <li><a href="#como-funciona" class="header__link">Como Funciona</a></li>
+          <li>
+            <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20destacar%20minha%20empresa%20com%20a%202T."
+               class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         2. HERO (fundo Azul Profundo)
+         ===================================================== -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero__inner">
+        <h1 class="hero__title" id="hero-titulo">Colocamos sua empresa no mapa da cidade e na internet.</h1>
+        <p class="hero__subtitle">Sua empresa encontrada, apresentada e pronta para receber clientes. Do Google ao WhatsApp, facilitamos o caminho até você.</p>
+        <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20destacar%20minha%20empresa%20com%20a%202T."
+           class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Quero destacar minha empresa</a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         3. O PROBLEMA (fundo Branco)
+         ===================================================== -->
+    <section class="section" id="problema" aria-labelledby="problema-titulo">
+      <div class="container section__content--narrow">
+        <h2 class="section__title" id="problema-titulo">Você está perdendo vendas todos os dias?</h2>
+        <p class="section__text">
+          Hoje, o cliente pesquisa no Google antes de decidir onde comprar. Se ele não encontra o seu local
+          atualizado, não vê um site profissional ou não tem um link fácil para comprar ou chamar no WhatsApp,
+          ele desiste em segundos e fecha negócio com o concorrente mais próximo.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         4. SOLUÇÕES (fundo Cinza Claro, layout em cards)
+         ===================================================== -->
+    <section class="section section--alt" id="solucoes" aria-labelledby="solucoes-titulo">
+      <div class="container">
+        <h2 class="section__title" id="solucoes-titulo">Soluções para sua empresa ser encontrada</h2>
+        <p class="section__text section__text--center">Tudo o que o seu negócio precisa para aparecer, passar confiança e converter.</p>
+
+        <div class="cards">
+
+          <!-- Card 1: Site Profissional -->
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="14" rx="2"></rect>
+                <path d="M3 9h18"></path>
+                <path d="M8 21h8"></path>
+                <path d="M12 18v3"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Site Profissional </h3>
+            <p class="card__text">Uma página rápida e objetiva que transmite autoridade, apresenta seus serviços em segundos e leva o visitante direto ao contato.</p>
+          </article>
+
+          <!-- Card 2: Perfil Google Maps -->
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="card__title">Perfil Google Maps</h3>
+            <p class="card__text">Otimização para buscas locais com horários, fotos, contatos e rotas sempre atualizados, para o cliente chegar até você sem dificuldade.</p>
+          </article>
+
+          <!-- Card 3: Placas NFC -->
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l2.7 5.5 6 .9-4.4 4.2 1 6-5.3-2.8-5.3 2.8 1-6L3.3 9.4l6-.9L12 3z"></path>
+              </svg>
+            </div>
+            <h3 class="card__title">Placas de Avaliação com QRCode e NFC</h3>
+            <p class="card__text">Tecnologia para facilitar a avalição: o cliente encosta o celular na placa do balcão ou lê o QRCode, turbinando sua reputação.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         5. COMO FUNCIONA (fundo Branco)
+         ===================================================== -->
+    <section class="section" id="como-funciona" aria-labelledby="como-titulo">
+      <div class="container">
+        <h2 class="section__title" id="como-titulo">Como funciona a jornada do seu cliente</h2>
+        <p class="section__text section__text--center">Do primeiro clique até a conversa no WhatsApp, em 4 passos simples.</p>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__number" aria-hidden="true">1</span>
+            <h3 class="step__title">Busca Local</h3>
+            <p class="step__text">O cliente pesquisa no Google pelo que você oferece na sua região.</p>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">2</span>
+            <h3 class="step__title">Localização &amp; Confiança</h3>
+            <p class="step__text">Ele encontra sua empresa no mapa, vê as avaliações e sente segurança.</p>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">3</span>
+            <h3 class="step__title">Apresentação</h3>
+            <p class="step__text">Seu site mostra rapidamente quem você é e o que você faz de melhor.</p>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">4</span>
+            <h3 class="step__title">Conversão Imediata</h3>
+            <p class="step__text">Com um toque, ele chama no WhatsApp e vira cliente.</p>
+          </li>
+        </ol>
+
+        <!-- CTA final -->
+        <div class="cta-final">
+          <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20destacar%20minha%20empresa%20com%20a%202T."
+             class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Quero destacar minha empresa</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       6. RODAPÉ TÉCNICO
+       ===================================================== -->
+  <footer class="footer">
+    <!-- Sub-footer: assinatura de desenvolvimento (NÃO ALTERAR O TEXTO NEM O LINK) -->
+    <div class="subfooter">
+      <p class="subfooter__text">Desenvolvido por <strong>2T Soluções Digitais</strong> • <a href="https://wa.me/5534998128507?text=Olá!%20Vi%20um%20site%20desenvolvido%20pela%202T%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener noreferrer">(34) 99812-8507</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript (menu mobile e rolagem suave) -->
+  <script src="script.js"></script>
+</body>
+</html>
