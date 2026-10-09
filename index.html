@@ -3,183 +3,599 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2T Soluções Digitais | Sua empresa no mapa da cidade e na internet</title>
-  <meta name="description" content="Site profissional, Perfil no Google Maps e Placas de Avaliação NFC. Colocamos sua empresa no mapa da cidade e na internet.">
-  <meta name="theme-color" content="#0B1F33">
+  <title>2T Soluções Digitais | Presença Digital, Google Maps e Sites de Alta Conversão</title>
+  
+  <!-- Metatags de SEO e Otimização -->
+  <meta name="description" content="Colocamos sua empresa no mapa da cidade e na internet. Sites profissionais, otimização no Google Maps e placas de avaliação NFC e QRCODe para atrair e converter clientes todos os dias.">
+  <meta name="keywords" content="2T Soluções Digitais, criação de sites, landing page, google meu negócio, google maps, placas nfc, presença digital, marketing local">
+  <meta name="author" content="2T Soluções Digitais">
+  <meta name="robots" content="index, follow">
 
-  <!-- Fontes: Montserrat (títulos) e Inter (textos e botões) -->
+  <!-- Open Graph para Compartilhamento em Redes Sociais e WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2T Soluções Digitais | Colocamos sua empresa no mapa da cidade e na internet">
+  <meta property="og:description" content="Sua empresa encontrada, apresentada e pronta para receber clientes. Do Google ao WhatsApp, facilitamos o caminho até você.">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Tipografia: Montserrat (Títulos 600, 700, 800) & Inter (Textos 400, 500, 600) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Folha de estilos principal -->
+  <!-- Folha de Estilos Principal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- =====================================================
-       1. HEADER (fixo no topo)
-       ===================================================== -->
-  <header class="header" id="topo">
-    <div class="container header__inner">
+  <!-- ========================================================
+       1. HEADER STICKY COM GLASSMORPHISM
+       ======================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      
+      <!-- Logotipo 2T Soluções Digitais -->
+      <a href="#hero" class="brand-logo" aria-label="Página inicial da 2T Soluções Digitais">
+        <span class="logo-mark">2T</span>
+        <span class="logo-text">Soluções Digitais</span>
+      </a>
 
-      <!-- Logo em texto -->
-      <a href="#topo" class="header__logo" aria-label="2T Soluções Digitais - Início">2T Soluções Digitais</a>
-
-      <!-- Botão hambúrguer (visível apenas no mobile) -->
-      <button class="header__toggle" id="menu-toggle" type="button"
-              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-        <span class="header__toggle-bar"></span>
-        <span class="header__toggle-bar"></span>
-        <span class="header__toggle-bar"></span>
-      </button>
-
-      <!-- Menu de navegação (links âncora + CTA) -->
-      <nav class="header__nav" id="menu" aria-label="Navegação principal">
-        <ul class="header__list">
-          <li><a href="#problema" class="header__link">O Problema</a></li>
-          <li><a href="#solucoes" class="header__link">Soluções</a></li>
-          <li><a href="#como-funciona" class="header__link">Como Funciona</a></li>
-          <li>
-            <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20destacar%20minha%20empresa%20com%20a%202T."
-               class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
-          </li>
+      <!-- Navegação Principal (Desktop) -->
+      <nav class="nav-desktop" id="navMenu" aria-label="Navegação do site">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Início</a></li>
+          <li class="nav-item"><a href="#problema" class="nav-link">O Problema</a></li>
+          <li class="nav-item"><a href="#solucoes" class="nav-link">Soluções</a></li>
+          <li class="nav-item"><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
         </ul>
       </nav>
+
+      <!-- Ações do Header (Botão WhatsApp & Hambúrguer Mobile) -->
+      <div class="header-actions">
+        <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%202T%20para%20destacar%20minha%20empresa." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-outline-header">
+          <!-- Ícone WhatsApp SVG -->
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.52 0-3-.4-4.31-1.16l-.31-.18-3.2.84.85-3.12-.2-.32a8.163 8.163 0 0 1-1.25-4.3c0-4.52 3.68-8.2 8.22-8.2 2.19 0 4.26.85 5.81 2.41a8.167 8.167 0 0 1 2.4 5.79c0 4.53-3.69 8.24-8.22 8.24zm4.51-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.47-.3z"/>
+          </svg>
+          <span>Falar no WhatsApp</span>
+        </a>
+
+        <!-- Botão Menu Hambúrguer (Mobile) -->
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
     </div>
   </header>
 
+  <!-- Drawer de Navegação Mobile -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-content">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Início</a></li>
+        <li><a href="#problema" class="mobile-nav-link">O Problema</a></li>
+        <li><a href="#solucoes" class="mobile-nav-link">Soluções</a></li>
+        <li><a href="#como-funciona" class="mobile-nav-link">Como Funciona</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%202T%20para%20destacar%20minha%20empresa." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-primary btn-full">
+          <span>Conversar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
   <main>
+    <!-- ========================================================
+         2. HERO SECTION (A DOBRA DE IMPACTO)
+         ======================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Elementos Geométricos e Grid de Fundo -->
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <div class="hero-glow-orb hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow-orb hero-glow-2" aria-hidden="true"></div>
 
-    <!-- =====================================================
-         2. HERO (fundo Azul Profundo)
-         ===================================================== -->
-    <section class="hero" aria-labelledby="hero-titulo">
-      <div class="container hero__inner">
-        <h1 class="hero__title" id="hero-titulo">Colocamos sua empresa no mapa da cidade e na internet.</h1>
-        <p class="hero__subtitle">Sua empresa encontrada, apresentada e pronta para receber clientes. Do Google ao WhatsApp, facilitamos o caminho até você.</p>
-        <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20destacar%20minha%20empresa%20com%20a%202T."
-           class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Quero destacar minha empresa</a>
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal-on-scroll">
+          <!-- Tag de Destaque Tecnológico -->
+          <div class="hero-tag">
+            <span class="tag-pulse"></span>
+            <span class="tag-text">Presença Digital & Atração Local</span>
+          </div>
+
+          <!-- Headline Principal H1 -->
+          <h1 class="hero-title">
+            Seu concorrente não é melhor que você. Ele só é mais  <span class="text-cyan">fácil de achar</span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="hero-subtitle">
+            O ecossistema completo para o comércio local: Perfil no Google Maps, site rápido integrado ao WhatsApp e placas
+            inteligentes de avaliação
+          </p>
+
+          <!-- CTA Principal (Ciano com Efeito Pulse) -->
+          <div class="hero-actions">
+            <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Quero%20destacar%20minha%20empresa%20com%20a%202T%20Solu%C3%A7%C3%B5es%20Digitais." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary btn-hero btn-pulse">
+              <span>Quero destacar minha empresa</span>
+              <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Badges de Prova e Conectividade -->
+          <div class="hero-badges">
+            <div class="badge-item">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Presença Online</span>
+            </div>
+            <div class="badge-item">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Site de Alta Conversão </span>
+            </div>
+            <div class="badge-item">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+              <span>Avaliação por NFC e QR Code</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elemento Visual Interativo do Hero (Card Mockup Tecnológico) -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="tech-card-showcase">
+            <div class="tech-card-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="window-title">Conheça nossa proposta </span>
+            </div>
+
+            <div class="tech-card-body">
+              <!-- Item 1: Google Maps Pin Ativo -->
+              <div class="tech-card-row">
+                <div class="tech-row-icon icon-maps">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="tech-row-content">
+                  <span class="tech-row-title">Perfil Google Maps</span>
+                  <span class="tech-row-sub">Sua empresa no mapa da cidade</span>
+                </div>
+              </div>
+
+              <!-- Item 2: Landing Page Otimizada -->
+              <div class="tech-card-row">
+                <div class="tech-row-icon icon-web">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="tech-row-content">
+                  <span class="tech-row-title">Site Rápido & Conectado ao WhatsApp</span>
+                  <span class="tech-row-sub">Apresentação profissional e seu cliente no Whatsapp</span>
+                </div>
+              </div>
+
+              <!-- Item 3: Placa de Avaliação NFC -->
+              <div class="tech-card-row">
+                <div class="tech-row-icon icon-nfc">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="tech-row-content">
+                  <span class="tech-row-title">Placas de Avaliação</span>
+                  <span class="tech-row-sub">Com tecnologia de NFC e QR Code</span>
+                </div>
+            
+              </div>
+
+              <!-- Indicador de Tráfego e Resultados -->
+              <div class="tech-stat-box">
+                <div class="stat-info">
+                  <span class="stat-number">+180%</span>
+                  <span class="stat-label">Cliques no botão de contato</span>
+                </div>
+                <div class="stat-graph-preview" aria-hidden="true">
+                  <span class="graph-bar h-40"></span>
+                  <span class="graph-bar h-60"></span>
+                  <span class="graph-bar h-75"></span>
+                  <span class="graph-bar h-100 bar-active"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- =====================================================
-         3. O PROBLEMA (fundo Branco)
-         ===================================================== -->
-    <section class="section" id="problema" aria-labelledby="problema-titulo">
-      <div class="container section__content--narrow">
-        <h2 class="section__title" id="problema-titulo">Você está perdendo vendas todos os dias?</h2>
-        <p class="section__text">
-          Hoje, o cliente pesquisa no Google antes de decidir onde comprar. Se ele não encontra o seu local
-          atualizado, não vê um site profissional ou não tem um link fácil para comprar ou chamar no WhatsApp,
-          ele desiste em segundos e fecha negócio com o concorrente mais próximo.
-        </p>
-      </div>
-    </section>
-
-    <!-- =====================================================
-         4. SOLUÇÕES (fundo Cinza Claro, layout em cards)
-         ===================================================== -->
-    <section class="section section--alt" id="solucoes" aria-labelledby="solucoes-titulo">
+    <!-- ========================================================
+         3. SEÇÃO "O PROBLEMA" (Fundo Branco, Alto Contraste)
+         ======================================================== -->
+    <section class="section section-problem" id="problema">
       <div class="container">
-        <h2 class="section__title" id="solucoes-titulo">Soluções para sua empresa ser encontrada</h2>
-        <p class="section__text section__text--center">Tudo o que o seu negócio precisa para aparecer, passar confiança e converter.</p>
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <span class="section-kicker">DIAGNÓSTICO DE MERCADO</span>
+          <h2 class="section-title">Você perde vendas todos os dias por não ser facil de achar.</h2>
+          <p class="section-subtitle">
+            Ter um excelente produto ou serviço não é mais suficiente se o seu cliente não consegue encontrar ou confiar na sua empresa em poucos segundos.
+          </p>
+        </div>
 
-        <div class="cards">
-
-          <!-- Card 1: Site Profissional -->
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="14" rx="2"></rect>
-                <path d="M3 9h18"></path>
-                <path d="M8 21h8"></path>
-                <path d="M12 18v3"></path>
+        <div class="problem-grid">
+          
+          <!-- Card de Dor 1 -->
+          <article class="problem-card reveal-on-scroll">
+            <div class="problem-icon-wrapper">
+              <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
               </svg>
             </div>
-            <h3 class="card__title">Site Profissional </h3>
-            <p class="card__text">Uma página rápida e objetiva que transmite autoridade, apresenta seus serviços em segundos e leva o visitante direto ao contato.</p>
+            <h3 class="problem-card-title">Invisível nas Buscas Locais</h3>
+            <p class="problem-card-desc">
+              Quando alguém da sua cidade pesquisa exatamente o que você vende no Google, a sua empresa aparece ou o cliente vai direto para o seu concorrente?
+            </p>
+          </article>
+
+          <!-- Card de Dor 2 -->
+          <article class="problem-card reveal-on-scroll">
+            <div class="problem-icon-wrapper">
+              <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+              </svg>
+            </div>
+            <h3 class="problem-card-title">Falta de Credibilidade Online</h3>
+            <p class="problem-card-desc">
+              Perfis desatualizados, sem fotos de qualidade ou sem um site profissional passam a impressão de amadorismo e afastam clientes qualificados.
+            </p>
+          </article>
+
+          <!-- Card de Dor 3 -->
+          <article class="problem-card reveal-on-scroll">
+            <div class="problem-icon-wrapper">
+              <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="problem-card-title">Poucas Avaliações no Google</h3>
+            <p class="problem-card-desc">
+              88% dos consumidores confiam em avaliações online tanto quanto em recomendações pessoais. Sem notas 5 estrelas, sua empresa gera desconfiança.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Conclusão e Ponte para a Solução -->
+        <div class="problem-conclusion text-center reveal-on-scroll">
+          <p class="conclusion-text">
+            A <strong>2T Soluções Digitais</strong> elimina essa barreira criando o ecossistema perfeito para sua empresa ser <strong>encontrada</strong>, <strong>admirada</strong> e <strong>procurada</strong>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. SEÇÃO "SOLUÇÕES" (Fundo Cinza Claro #F3F5F7)
+         ======================================================== -->
+    <section class="section section-solutions" id="solucoes">
+      <div class="container">
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <span class="section-kicker">ECOSSISTEMA 2T</span>
+          <h2 class="section-title">Soluções desenhadas para atrair e converter</h2>
+          <p class="section-subtitle">
+            Três pilares estratégicos e complementares para transformar visitantes em contatos reais no seu WhatsApp comercial.
+          </p>
+        </div>
+
+        <!-- Grid de 3 Colunas Desktop / 1 Coluna Mobile -->
+        <div class="solutions-grid">
+          
+          <!-- Card 1: Site Profissional / Landing Page -->
+          <article class="solution-card reveal-on-scroll">
+            <div class="card-icon-box">
+              <svg class="solution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+                <path d="M7 8h10"></path>
+                <path d="M7 12h5"></path>
+              </svg>
+            </div>
+            <span class="card-tag">Pilar da Conversão</span>
+            <h3 class="card-title">Site Profissional</h3>
+            <p class="card-desc">
+              Páginas rápidas, modernas e focadas em apresentar seus produtos/serviços e direcionar o visitante  ao seu WhatsApp de vendas.
+            </p>
+            <ul class="card-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Carregamento ultrarápido</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Acessível em celulares e computadores</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Botões de ação que levam ao Whatsapp</span>
+              </li>
+            </ul>
           </article>
 
           <!-- Card 2: Perfil Google Maps -->
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path>
-                <circle cx="12" cy="10" r="2.5"></circle>
+          <article class="solution-card reveal-on-scroll">
+            <div class="card-icon-box">
+              <svg class="solution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
               </svg>
             </div>
-            <h3 class="card__title">Perfil Google Maps</h3>
-            <p class="card__text">Otimização para buscas locais com horários, fotos, contatos e rotas sempre atualizados, para o cliente chegar até você sem dificuldade.</p>
+            <span class="card-tag">Pilar da Descoberta</span>
+            <h3 class="card-title">Perfil Google Maps</h3>
+            <p class="card-desc">
+              Estruturação e otimização avançada do seu Perfil da Empresa no Google. Seu negócio sempre será uma opção quando o cliente procurar. Com rota traçada, horário, contato e catálogo de serviços.
+            </p>
+            <ul class="card-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Perfil completo e profissional</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sem dúvidas para o cliente</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Informações certas na hora certa</span>
+              </li>
+            </ul>
           </article>
 
-          <!-- Card 3: Placas NFC -->
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3l2.7 5.5 6 .9-4.4 4.2 1 6-5.3-2.8-5.3 2.8 1-6L3.3 9.4l6-.9L12 3z"></path>
+          <!-- Card 3: Placas de Avaliação NFC -->
+          <article class="solution-card reveal-on-scroll">
+            <div class="card-icon-box">
+              <svg class="solution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
               </svg>
             </div>
-            <h3 class="card__title">Placas de Avaliação com QRCode e NFC</h3>
-            <p class="card__text">Tecnologia para facilitar a avalição: o cliente encosta o celular na placa do balcão ou lê o QRCode, turbinando sua reputação.</p>
+            <span class="card-tag">Pilar da Autoridade</span>
+            <h3 class="card-title">Placa de Avaliação Inteligente </h3>
+            <p class="card-desc">
+              O cliente apenas aproxima o celular (NFC) ou aponta a câmera para o QR Code e a tela de avaliação se abre.
+            </p>
+            <ul class="card-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Avaliação em menos de 15 segundos</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tecnologia dupla</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sem necessidade de digitar links ou pesquisar</span>
+              </li>
+            </ul>
           </article>
 
         </div>
+
       </div>
     </section>
 
-    <!-- =====================================================
-         5. COMO FUNCIONA (fundo Branco)
-         ===================================================== -->
-    <section class="section" id="como-funciona" aria-labelledby="como-titulo">
+    <!-- ========================================================
+         5. SEÇÃO "COMO FUNCIONA" (Fundo Branco #FFFFFF)
+         ======================================================== -->
+    <section class="section section-workflow" id="como-funciona">
       <div class="container">
-        <h2 class="section__title" id="como-titulo">Como funciona a jornada do seu cliente</h2>
-        <p class="section__text section__text--center">Do primeiro clique até a conversa no WhatsApp, em 4 passos simples.</p>
-
-        <ol class="steps">
-          <li class="step">
-            <span class="step__number" aria-hidden="true">1</span>
-            <h3 class="step__title">Busca Local</h3>
-            <p class="step__text">O cliente pesquisa no Google pelo que você oferece na sua região.</p>
-          </li>
-          <li class="step">
-            <span class="step__number" aria-hidden="true">2</span>
-            <h3 class="step__title">Localização &amp; Confiança</h3>
-            <p class="step__text">Ele encontra sua empresa no mapa, vê as avaliações e sente segurança.</p>
-          </li>
-          <li class="step">
-            <span class="step__number" aria-hidden="true">3</span>
-            <h3 class="step__title">Apresentação</h3>
-            <p class="step__text">Seu site mostra rapidamente quem você é e o que você faz de melhor.</p>
-          </li>
-          <li class="step">
-            <span class="step__number" aria-hidden="true">4</span>
-            <h3 class="step__title">Conversão Imediata</h3>
-            <p class="step__text">Com um toque, ele chama no WhatsApp e vira cliente.</p>
-          </li>
-        </ol>
-
-        <!-- CTA final -->
-        <div class="cta-final">
-          <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20destacar%20minha%20empresa%20com%20a%202T."
-             class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Quero destacar minha empresa</a>
+        
+        <div class="section-heading text-center reveal-on-scroll">
+          <span class="section-kicker">JORNADA DO CLIENTE</span>
+          <h2 class="section-title">Como o ecossistema transforma buscas em clientes</h2>
+          <p class="section-subtitle">
+            Um fluxo fluido e sem atrito para conduzir o morador da sua região da dúvida inicial até a conversa no WhatsApp.
+          </p>
         </div>
+
+        <div class="workflow-steps">
+          
+          <!-- Passo 1: Busca Local -->
+          <div class="workflow-step reveal-on-scroll">
+            <div class="step-badge">
+              <span class="step-number">01</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Busca Local</h3>
+              <p class="step-desc">
+                O cliente pesquisa por serviços ou produtos na sua cidade através do Google e encontra sua empresa no mapa.
+              </p>
+            </div>
+          </div>
+
+          <!-- Linha conectora desktop -->
+          <div class="workflow-connector" aria-hidden="true"></div>
+
+          <!-- Passo 2: Confiança -->
+          <div class="workflow-step reveal-on-scroll">
+            <div class="step-badge">
+              <span class="step-number">02</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Confiança</h3>
+              <p class="step-desc">
+                Ele nota seu perfil impecável, com fotos atrativas e avaliações 5 estrelas obtidas pelas Placas Inteligentes, gerando segurança imediata.
+              </p>
+            </div>
+          </div>
+
+          <!-- Linha conectora desktop -->
+          <div class="workflow-connector" aria-hidden="true"></div>
+
+          <!-- Passo 3: Apresentação -->
+          <div class="workflow-step reveal-on-scroll">
+            <div class="step-badge">
+              <span class="step-number">03</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Apresentação</h3>
+              <p class="step-desc">
+                Ao entrar em seu site profissional, ele será apresentado a sua empresa de uma forma rápida, direta e sem distrações.
+              </p>
+            </div>
+          </div>
+
+          <!-- Linha conectora desktop -->
+          <div class="workflow-connector" aria-hidden="true"></div>
+
+          <!-- Passo 4: Conversão Imediata -->
+          <div class="workflow-step reveal-on-scroll">
+            <div class="step-badge">
+              <span class="step-number">04</span>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Conversão Imediata</h3>
+              <p class="step-desc">
+                Com um único toque, ele abre o WhatsApp do seu negócio com uma mensagem pronta para fechar o pedido ou agendamento.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner de Conversão na Seção de Como Funciona -->
+        <div class="workflow-cta-banner reveal-on-scroll">
+          <div class="banner-text">
+            <h3>Pronto para colocar sua empresa no mapa da cidade?</h3>
+            <p>Converse com a equipe da 2T Soluções Digitais e descubra o plano ideal para o seu negócio.</p>
+          </div>
+          <div class="banner-action">
+            <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20um%20diagn%C3%B3stico%20gratuito%20da%20presen%C3%A7a%20digital%20da%20minha%20empresa." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary btn-pulse">
+              <span>Solicitar Diagnóstico no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
-
   </main>
 
-  <!-- =====================================================
-       6. RODAPÉ TÉCNICO
-       ===================================================== -->
-  <footer class="footer">
-    <!-- Sub-footer: assinatura de desenvolvimento (NÃO ALTERAR O TEXTO NEM O LINK) -->
-    <div class="subfooter">
-      <p class="subfooter__text">Desenvolvido por <strong>2T Soluções Digitais</strong> • <a href="https://wa.me/5534998128507?text=Olá!%20Vi%20um%20site%20desenvolvido%20pela%202T%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener noreferrer">(34) 99812-8507</a></p>
+  <!-- ========================================================
+       6. RODAPÉ TÉCNICO (DIRETRIZ ESTRITA E OBRIGATÓRIA)
+       ======================================================== -->
+  <footer class="site-footer">
+    
+    <!-- Parte Superior do Rodapé (Institucional) -->
+    <div class="footer-main">
+      <div class="container footer-container">
+        
+        <div class="footer-brand">
+          <div class="brand-logo footer-logo">
+            <span class="logo-mark">2T</span>
+            <span class="logo-text">Soluções Digitais</span>
+          </div>
+          <p class="footer-tagline">
+            Especialista em posicionamento local, criação de sites de alta conversão e tecnologia para suas avaliações.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Navegação</h4>
+          <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#problema">O Problema</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-links-title">Atendimento Direto</h4>
+          <p class="footer-contact-item">
+            Segunda a Sábado: 08h às 18h
+          </p>
+          <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Vi%20o%20site%20da%202T%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="footer-whatsapp-link">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.52 0-3-.4-4.31-1.16l-.31-.18-3.2.84.85-3.12-.2-.32a8.163 8.163 0 0 1-1.25-4.3c0-4.52 3.68-8.2 8.22-8.2 2.19 0 4.26.85 5.81 2.41a8.167 8.167 0 0 1 2.4 5.79c0 4.53-3.69 8.24-8.22 8.24zm4.51-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.47-.3z"/>
+            </svg>
+            <span>(34) 99812-8507</span>
+          </a>
+        </div>
+
+      </div>
     </div>
+
+    <!-- FAIXA INFERIOR / SUB-FOOTER OBRIGATÓRIA -->
+    <div class="sub-footer">
+      <div class="container sub-footer-container">
+        Desenvolvido por <span class="brand-highlight">2T Soluções Digitais</span> • <a href="https://wa.me/5534998128507?text=Olá!%20Vi%20um%20site%20desenvolvido%20pela%202T%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">(34) 99812-8507</a>
+      </div>
+    </div>
+
   </footer>
 
-  <!-- JavaScript (menu mobile e rolagem suave) -->
+  <!-- Botão Flutuante de WhatsApp -->
+  <aside class="floating-whatsapp" aria-label="Contato direto via WhatsApp">
+    <a href="https://wa.me/5534998128507?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%202T." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="btn-floating-wa" 
+       title="Falar no WhatsApp com a 2T Soluções Digitais">
+      <span class="floating-pulse"></span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.52 0-3-.4-4.31-1.16l-.31-.18-3.2.84.85-3.12-.2-.32a8.163 8.163 0 0 1-1.25-4.3c0-4.52 3.68-8.2 8.22-8.2 2.19 0 4.26.85 5.81 2.41a8.167 8.167 0 0 1 2.4 5.79c0 4.53-3.69 8.24-8.22 8.24zm4.51-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.07-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.47-.3z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Script Vanilla JS -->
   <script src="script.js"></script>
 </body>
 </html>
